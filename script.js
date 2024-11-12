@@ -26,7 +26,6 @@ const animate = () => {
   const randomness = (Math.random() - 0.5) * 0.5;
 
   const movement = baseMovement + randomness;
-  console.log('movement', movement);
   mouth.style.transform = `translateY(${movement}px)`;
 
   time += 0.03;
@@ -34,7 +33,7 @@ const animate = () => {
   animationFrameId = requestAnimationFrame(animate);
 }
 
-audio.addEventListener('ended', () => {
+audio.addEventListener('pause', () => {
   isPlaying = false;
   cancelAnimationFrame(animationFrameId);
   mouth.style.transform = 'translateY(0px)';
