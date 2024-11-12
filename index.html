@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ted Stevens Radio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body style="font-family:monospace;display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:100vh;background:url(bg.jpg);background-repeat:no-repeat;background-size:cover;background-position: center;">
+    <div class="container">
+        <marquee behavior="alternate" class="ticker">Ted Stevens Radio</marquee>
+        <div class="ted-container" onclick="playAudio();">
+            <img src="ted-head.png" class="ted-head" />
+            <img id="mouth" src="ted-mouth.png" class="ted-mouth" />
+        </div>
+        <h3 class="quote">"The internet is a series of tubes!"</h3>
+        <h3 class="attribution">- Ted Stevens</h3>
+
+        <p class="description">In 2006, Ted Stevens opposed Net Neutrality describing the Internet as a series of tubes. We all mocked him for it, calling him out of touch with how the Internet works but Ted was right and we all owe Ted an apology. Sorry, Ted.</p>
+    </div>
+
+    <audio id="audio" preload="auto" src="https://media.evenings.co/s/g1axN0Mo9" class="audio-player" />
+    <script async src="script.js"></script>
+</body>
+</html>
